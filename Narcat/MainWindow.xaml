@@ -1,0 +1,50 @@
+﻿<Window x:Class="Narcat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Narcat"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,800,450" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
+    <Grid Background="White">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Fill="#DCCFEC" Height="70" Grid.Row="2" Margin="0,0,-1,0"/>
+        <Rectangle Grid.RowSpan="4" Fill="#AFA5FF" Width="250" Height="450" RadiusX="77.5" RadiusY="77.5" Margin="-124,0,674,0"/>
+        
+        <Grid Grid.Row="0">
+            <Button Width="40" Height="30" HorizontalAlignment="Right" Margin="25,0" Style="{StaticResource Exitbat}"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Image Source="Resources/logo.png" HorizontalAlignment="Left" Margin="0,38,0,-38"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="270"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="summ"/>
+            <Button Grid.Column="1" Style="{StaticResource DockBtnStyle}" Margin="25,0"/>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
