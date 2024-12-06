@@ -25,14 +25,14 @@
         </Grid.RowDefinitions>
 
         <Rectangle Fill="#DCCFEC" Height="70" Grid.Row="2" Margin="0,0,-1,0"/>
-        <Rectangle Grid.RowSpan="4" Fill="#AFA5FF" Width="250" Height="450" RadiusX="77.5" RadiusY="77.5" Margin="-124,0,674,0"/>
+        <Rectangle Grid.RowSpan="4" Fill="#AFA5FF" Width="250" Height="450" RadiusX="77.5" RadiusY="77.5" Margin="-164,0,714,0"/>
 
         <Grid Grid.Row="0">
             <Button Width="40" Height="30" HorizontalAlignment="Right" Margin="25,0" Style="{StaticResource Exitbat}"/>
         </Grid>
 
         <Grid Grid.Row="1">
-            <Image Source="Resources/logo.png" HorizontalAlignment="Left" Margin="0,38,0,-38"/>
+            <Image Source="Resources/logo.png" HorizontalAlignment="Left" Stretch="UniformToFill" Margin="-66,38,0,-38" Width="230"/>
         </Grid>
 
         <Grid Grid.Row="2">
@@ -40,8 +40,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="270"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="1" HorizontalAlignment="Left" Style="{StaticResource DockBtnStyle}" Margin="25,0"/>
-            <TextBlock Name="summ" Text="КУПИТЬ" FontFamily="Open Sans" FontSize="22" FontWeight="Bold" Foreground="#4F517D" Margin="455,19,253,21" IsEnabled="False" Grid.ColumnSpan="2"/>
+            <Button Grid.Column="1"  Style="{StaticResource DockBtnStyle}" Margin="25,0"/>
+            <TextBlock Name="summ" Text="КУПИТЬ" FontFamily="Open Sans" FontSize="22" FontWeight="Bold" Foreground="#4F517D" Margin="91,24,87,16" IsEnabled="False" Grid.Column="1"/>
         </Grid>
 
 
